@@ -1,0 +1,94 @@
+@use "./align";
+@import "./color";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    height: 80vh;
+    width: 25vw;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 30px;
+    background-color: $wh;
+    border: 1px solid $bl;
+    @extend %align;
+    .block{
+        width: 90%;
+        @media screen and (min-width:640px) {
+            
+            
+        }
+    }
+    .b1{
+        font-size: 40px;
+        color: $wh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 10px;
+        .sub{
+            width: 60px;
+            height: 60px;
+            background-color: $bl;
+            border-radius: 10px;
+            margin: 0px 5px;
+            @extend %align;
+        }
+    }
+    .b2,.b3,.b4{
+        @extend %inalign;
+        .cont{
+            width: 90%;
+            margin: 5px 0px;
+            padding: 0px 10px;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+        }
+        .c1{
+            font-size: 12px;
+        }
+        .c2, .c3{
+            &:hover{
+                background-color: $gr;
+                color: $bl;
+            }
+        }
+        .c2 div{
+            margin: 0px 10px;
+            @media screen and (max-width:640px) {
+                display: none;
+            }
+        }
+        .c3 div{
+            margin: 0px 10px;
+            @media screen and (max-width:640px) {
+                display: none;
+            }
+        }
+        
+        .not{
+            height: 15px;
+            width: 25px;
+            text-align: center;
+            color:$bl;
+            font-weight: bold;
+            background-color: $gr;
+            border-radius: 5px;
+        }
+        .red{
+            color: $or;
+            background-color: $lrd;
+        }
+    }
+
+}
+

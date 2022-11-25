@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.rect{
+	height: 250px;
+	width: 700px;
+	margin: auto;
+	position: relative;
+	top: 80px;
+	overflow: hidden;
+}
+.circle{
+	height: 500px;
+	width: 500px;
+	background-color: red;
+	position: absolute;
+	top: 60px;
+	left: 50px;
+	border-radius: 50%;
+}
+.rect2{
+	height: 250px;
+	width: 700px;
+	margin: auto;
+	position: relative;
+	top: 120px;
+	overflow: hidden;
+
+}
+.down{
+	background-color: white;
+	position: absolute;
+	top: -280px;
+}

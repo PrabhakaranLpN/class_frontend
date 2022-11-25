@@ -1,0 +1,48 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.main{
+	height: 90vh;
+	width: 80vw;
+	background-color: yellow;
+	position: relative;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.text{
+	color: blue;
+	font-size: 40px;
+}
+.box{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	border: 2px solid blue;
+}
+.b1{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.b2{
+	background-color: white;
+}
+.b3{
+	background-color: white;
+	box-shadow: 10px 10px 10px blue;
+	red;
+}
+.b4{
+	background-color: white;
+	box-shadow: 10px 10px 10px blue inset;
+}

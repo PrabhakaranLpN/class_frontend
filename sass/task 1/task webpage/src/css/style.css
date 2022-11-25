@@ -1,0 +1,71 @@
+.middle, .middle .m2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top {
+  position: relative;
+  top: 0px;
+  height: 10vh;
+  width: 100vw;
+  padding: 0px 100px;
+}
+.top .cont {
+  height: 100%;
+}
+.top .gr {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.middle {
+  height: 80vh;
+  width: 100vw;
+  background-color: lightgreen;
+}
+.middle .mid {
+  height: 100%;
+}
+.middle .m1 {
+  width: 50%;
+  background-image: url(./aa.webp);
+  background-size: cover;
+}
+.middle .m2 {
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  left: 620px;
+}
+.middle .m3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.middle .m3 .inner {
+  height: 35%;
+  width: 50%;
+  overflow-wrap: break-word;
+  margin-left: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+
+
+.circle{
+	height: 400px;
+	width: 400px;
+	border: 5px solid black;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background-color: yellow;
+	margin: auto;
+	position: relative;
+	}
+.eye1{
+	height: 100px;
+	width: 50px;
+	border: 5px solid black;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background-color: black;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+
+}
+

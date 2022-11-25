@@ -1,0 +1,31 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.main{
+	height: 40px;
+	width: 100px;
+	margin: auto;
+	position: relative;
+	top: 300px;
+	background-color: rgb(85, 0, 255);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+}
+.slide{
+	height: 80%;
+	width: 50%;
+	position: absolute;
+	left: 0px;
+	background-color: white;
+	border-radius: 50px;
+	transition: 0.8s cubic-bezier(.62,-0.02,.23,1.19);
+	margin: 5px 5px 5px 5px;
+}
+.main:hover > .slide{
+	position: absolute;
+	left: 40px;
+}

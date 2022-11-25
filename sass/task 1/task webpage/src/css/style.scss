@@ -1,0 +1,60 @@
+@use "./align";
+@import "./color";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top{
+    position: relative;
+    top: 0px;
+    height: 10vh;
+    width: 100vw;
+    @extend %ttalign;
+    padding: 0px 100px;
+    .cont{
+        height: 100%;
+        @extend %tinalign;
+    }
+    .gr{
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
+}
+.middle{
+    height: 80vh;
+    width: 100vw;
+    background-color: lightgreen;
+    @extend %talign;
+    .mid{
+        height: 100%;
+    }
+    .m1{
+        width: 50%;
+        background-image: url(./aa.webp);
+        background-size: cover;
+
+    }
+    .m2{
+        font-size: 70px;
+        font-weight: bold;
+        @extend %talign;
+        position: absolute;
+        left: 620px;
+    }
+    .m3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .inner{
+            height: 35%;
+            width: 50%;
+            overflow-wrap: break-word;
+            margin-left: 50px;
+        }
+    }
+}
