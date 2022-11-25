@@ -1,0 +1,754 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  height: 39.6em;
+  width: 85em;
+  background: linear-gradient(blue, white);
+  position: relative;
+  overflow: hidden;
+}
+.mountain{
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid rgb(65, 83, 38);
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+}
+.m1{
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid rgb(53, 82, 53);
+  position: absolute;
+  top: 220px;
+  left: 240px;
+}
+.m2{
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 400px solid green;
+  position: absolute;
+  top: 150px;
+  left: 1100px;
+}
+.m3{
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 500px solid green;
+  position: absolute;
+  top: 60px;
+  left: -120px;
+}
+.sea{
+  height: 20vh;
+  width: 100vw;
+  background-color: rgb(46, 46, 250);
+  position: absolute;
+  bottom: 0px;
+  transition: 2s;
+}
+.track{
+  width: 88vw;
+  height: 2vh;
+  background-color: brown;
+  position: absolute;
+  left: 100px;
+  bottom: 40vh;
+  border: 2px solid black;
+}
+.pillor{
+  height: 30vh;
+  width: 2vw;
+  background-color: gray;
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 3px solid black;
+}
+.one{
+  position: absolute;
+  left: 25vw;
+}
+.two{
+  position: absolute;
+  left: 40vw;
+}
+.three{
+  position: absolute;
+  left: 55vw;
+}
+.four{
+  position: absolute;
+  left: 70vw;
+}
+.five{
+  position: absolute;
+  left: 85vw;
+}
+.areas{
+  height: 22vh;
+  width: 88vw;
+  background-color: transparent;
+  position: absolute;
+  bottom: 42vh;
+  left: 7vw;
+  overflow: hidden;
+}
+.block{
+  height: 20vh;
+  width: 75vw;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 1550px;
+  animation: train 8s linear infinite;
+
+}
+.coach{
+  height: 70%;
+  width: 16%;
+  background-color: teal;
+  position: absolute;
+  right: 25px;
+  bottom: 13px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.oo{
+  position: absolute;
+  right: 225px;
+}
+.tt{
+  position: absolute;
+  right: 425px;
+}
+.th{
+  position: absolute;
+  right: 625px;
+}
+.fo{
+  position: absolute;
+  right: 825px;
+}
+.fi{
+  position: absolute;
+  right: 1025px;
+}
+.head{
+  position: absolute;
+  right: 1225px;
+  border-radius: 80px;
+  background-color: brown;
+}
+.wheel{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: -15px;
+  left: 30px;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wheel 6s linear infinite;
+}
+.inner{
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px dashed black;
+  transition: 4s;
+}
+.w2{
+  position: absolute;
+  left: 100px;
+  transition: 4s;
+}
+.rod{
+  height: 7px;
+  width: 55%;
+  background-color: darkgoldenrod;
+  position: absolute;
+  bottom: -3px;
+  left: 35px;
+  border-left: 5px solid blueviolet;
+  border-right: 5px solid blueviolet;
+}
+.open{
+  height: 80%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: start;
+  justify-content: space-around;
+  align-items: center;
+}
+.door{
+  height: 90%;
+  width: 15%;
+  background-color: gray;
+  border: 3px solid darkblue;
+}
+.window{
+  height: 30%;
+  width: 10%;
+  background-color: darkred;
+  border: 3px dashed darkblue;
+}
+.conn{
+  height: 8px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+  border-radius: 5px;
+  left: -38px;
+  bottom: 20px;
+}
+.c2{
+  position: absolute;
+  left: -38px;
+}
+.c3{
+  position: absolute;
+  left: -38px;
+}
+.c4{
+  position: absolute;
+  left: -38px;
+}
+.c5{
+  position: absolute;
+  left: -38px;
+}
+.c6{
+  position: absolute;
+  left: -38px;
+}
+.blow{
+  height: 20px;
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  bottom: 80px;
+  border-radius: 10px;
+}
+.hole{
+  position: absolute;
+  height: 190px;
+  width: 50px;
+  left: -40px;
+  top: 140px;
+  background-color: black;
+  border: 4px solid darkgreen;
+  border-radius: 110px;
+}
+.hright{
+  top: 60px;
+}
+
+.clouds{
+  height: 70px;
+  width: 130px;
+  background-color: aquamarine;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 30px;
+  animation: cl 16s infinite linear;
+}
+.cl2{
+  position: absolute;
+  left: 700px;
+  top: 100px;
+  animation: cl2 13s infinite linear;
+  background-color: aquamarine;
+}
+.cl3{
+  position: absolute;
+  left: 200px;
+  top: 130px;
+}
+.cl4{
+  position: absolute;
+  left: -700px;
+  top: 70px;
+  animation: cl4 18s infinite linear;
+}
+.circ{
+  height: 70px;
+  width: 70px;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 20px;
+  left: -10px;
+  border-radius: 50%;
+}
+.cr2{
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+}
+.block2{
+  height: 300px;
+  width: 200px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  right: -200px;
+  animation: para 29s infinite linear;
+}
+.seat{
+  height: 30px;
+  width: 30px;
+  background-color: pink;
+  border: 4px solid black;
+  position: absolute;
+  bottom: 0px;
+  left: 90px;
+}
+.trap {
+  border-bottom: 30px solid red;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0px;
+  width: 70px;
+  transform: rotate(360deg);
+  position: absolute;
+  bottom: 55px;
+  rotate: 180deg;
+  left: 70px; 
+}
+.side{
+  height: 30px;
+  width: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 27px;
+  left: 118px;
+  transform: rotate(10deg);
+}
+.left{
+  left: 88px;
+  transform: rotate(-10deg);
+}
+.balloon{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+}
+.incirc{
+  height: 180px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: black;
+  border: solid 2px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.cent{
+  height: 180px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  border: solid 2px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ww{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 170px;
+  left: 20px;
+}
+.fall {
+  border-bottom: 110px solid rgb(28, 229, 243);
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 200px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.ripp{
+  height: 40px;
+  width: 10px;
+  background-color: white;
+  border-radius: 30px;
+  animation: ff 1s infinite linear;
+}
+.r1{
+  height: 20px;
+  width: 7px;
+  background-color: white;
+  border-radius: 20px;
+}
+.r2{
+  height: 20px;
+  width: 7px;
+  background-color: white;
+  border-radius: 20px;
+}
+.hor{
+  height: 30px;
+  width: 70px;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  animation: hor 2s infinite linear;
+}
+.hr1{
+  position: absolute;
+  left: 200px;
+  animation: hr1 2s infinite linear;
+}
+
+.hr2{
+  position: absolute;
+  left: 380px;
+  animation: hr2 2s infinite linear;
+}
+.hr3{
+  position: absolute;
+  left: 560px;
+  animation: hr3 2s infinite linear;
+}
+.hr4{
+  position: absolute;
+  left: 740px;
+  animation: hr4 2s infinite linear;
+}
+.hr5{
+  position: absolute;
+  left: 920px;
+  animation: hr5 2s infinite linear;
+}
+.hr6{
+  position: absolute;
+  left: 1100px;
+  animation: hr6 2s infinite linear;
+}
+.hr7{
+  position: absolute;
+  left: 1280px;
+  animation: hr7 2s infinite linear;
+}
+.hr8{
+  position: absolute;
+  left: 200px;
+  bottom: 80px;
+  animation: hr8 1s infinite linear;
+}
+.hr9{
+  position: absolute;
+  left: 400px;
+  bottom: 80px;
+  animation: hr9 1s infinite linear;
+}
+.hr10{
+  position: absolute;
+  left: 640px;
+  bottom: 90px;
+  animation: hr10 1s infinite linear;
+}
+.hr11{
+  position: absolute;
+  left: 840px;
+  bottom: 90px;
+  animation: hr11 1s infinite linear;
+}
+.hr12{
+  position: absolute;
+  left: 1020;
+  bottom: 90px;
+  animation: hr12 1s infinite linear;
+}
+
+.hh{
+  width: 90%;
+  height: 5px;
+  border-radius: 30px;
+  background-color: rgb(235, 231, 231);
+  animation: hh 1s infinite linear;
+
+}
+.h1{
+  width: 40%;
+  height: 5px;
+}
+.h2{
+  width: 40%;
+  height: 5px;
+}
+.sun{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(red, yellow);
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  box-shadow: 0px 0px 40px yellow;
+  animation: sun 22s infinite linear;
+}
+
+.green{
+  height: 40px;
+  width: 30px;
+  background-color: rgb(2, 65, 2);
+  position: absolute;
+  bottom: 115px;
+  left: 600px;
+  border-radius: 50%;
+}
+.g1{
+  position: absolute;
+  left: 700px;
+}
+.g2{
+  position: absolute;
+  left: 800px;
+}
+.g3{
+  position: absolute;
+  left: 900px;
+}
+
+.g4{
+  position: absolute;
+  left: 1000px;
+}
+
+.g5{
+  position: absolute;
+  left: 1100px;
+}
+.g6{
+  position: absolute;
+  left: 630px;
+}
+.g7{
+  position: absolute;
+  left: 730px;
+}
+.g8{
+  position: absolute;
+  left: 830px;
+}
+.g9{
+  position: absolute;
+  left: 930px;
+}
+.g10{
+  position: absolute;
+  left: 1030px;
+}
+
+.leaf{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(2, 65, 2);
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  border: 2px solid rgb(2, 65, 2);
+}
+.l2{
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+.l3{
+  position: absolute;
+  left: 10px;
+  top: -5px;
+}
+.l4{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+
+
+
+
+@keyframes train {
+  100% {
+    left: -1000px;
+  }
+}
+@keyframes cl{
+  100% {
+    left: 1700px;
+  }
+}
+@keyframes cl2{
+  100% {
+    left: 1900px;
+  }
+}
+@keyframes cl4{
+  100% {
+    left: 1700px;
+  }
+}
+@keyframes para {
+  0%{
+    left: -200px;
+    top: 300px;
+  }
+  100%{
+    left: 1300px;
+    top: -200px;
+  }
+}
+@keyframes ff{
+  100%{
+   position: absolute;
+   top: 50px;
+    
+  }
+}
+@keyframes hor {
+  100%{
+    left: 26px;
+  }
+}
+
+@keyframes hr1 {
+  100%{
+    left: 206px;
+  }
+}
+@keyframes hr2 {
+  100%{
+    left: 386px;
+  }
+}
+@keyframes hr3 {
+  100%{
+    left: 566px;
+  }
+}
+@keyframes hr4 {
+  100%{
+    left: 746px;
+  }
+}
+@keyframes hr5 {
+  100%{
+    left: 926px;
+  }
+}
+@keyframes hr6 {
+  100%{
+    left: 1106px;
+  }
+}
+@keyframes hr7 {
+  100%{
+    left: 1286px;
+  }
+}
+@keyframes hr8 {
+  100%{
+    left: 206px;
+  }
+}
+@keyframes hr9 {
+  100%{
+    left: 406px;
+  }
+}
+@keyframes hr10 {
+  100%{
+    left: 646px;
+  }
+}
+@keyframes hr11 {
+  100%{
+    left: 846px;
+  }
+}
+@keyframes hr12 {
+  100%{
+    left: 1026px;
+  }
+}
+@keyframes sun {
+  100%{
+    left: 1400px;
+  }
+}
+@keyframes wheel {
+  100%{
+    transform: rotate(-1440deg);
+  }
+} 
+
+
+.main:hover > .sun {
+  background: linear-gradient(white, black);
+}
+
+.main:hover {
+  background: linear-gradient(black, white); 
+}
+
+
+.main:hover > .areas > .block > .coach > .open > .door{
+  background-color: yellow;
+}
+
+.main:hover > .areas > .block > .coach > .open > .window{
+  background-color: yellow;
+}
+
+.main:hover > .sea{
+  background-color: rgb(1, 43, 99);
+}
+.main:hover > .clouds {
+  background-color: gray;
+}
+.main:hover > .clouds > .circ {
+  background-color: gray;
+}
