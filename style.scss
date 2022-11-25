@@ -1,0 +1,34 @@
+@import "align";
+@import "colors";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    margin: auto;
+    @extend %align;
+}
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: $gg;
+    border-radius: 20px;
+}
+.b2{
+    background-color: $yl;
+    border: 4px solid $dyl;
+}
+.b3{
+    background-color: $rd;
+    border: 4px solid $drd;
+}
+.b4{
+    background-color: $sb;
+    border: 4px solid $dsb;
+
+}
